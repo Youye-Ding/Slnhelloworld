@@ -67,13 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Caeser.aspx" />
+    <Content Include="calLoan.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="HomeworkchkEmail.aspx" />
     <Content Include="homeworkGetTriangleArea.aspx" />
+    <Content Include="IDcard.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caeser.aspx.cs">
+      <DependentUpon>Caeser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caeser.aspx.designer.cs">
+      <DependentUpon>Caeser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calLoan.aspx.cs">
+      <DependentUpon>calLoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calLoan.aspx.designer.cs">
+      <DependentUpon>calLoan.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkchkEmail.aspx.cs">
+      <DependentUpon>HomeworkchkEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkchkEmail.aspx.designer.cs">
+      <DependentUpon>HomeworkchkEmail.aspx</DependentUpon>
     </Compile>
     <Compile Include="homeworkGetTriangleArea.aspx.cs">
       <DependentUpon>homeworkGetTriangleArea.aspx</DependentUpon>
@@ -81,6 +106,13 @@
     </Compile>
     <Compile Include="homeworkGetTriangleArea.aspx.designer.cs">
       <DependentUpon>homeworkGetTriangleArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IDcard.aspx.cs">
+      <DependentUpon>IDcard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IDcard.aspx.designer.cs">
+      <DependentUpon>IDcard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

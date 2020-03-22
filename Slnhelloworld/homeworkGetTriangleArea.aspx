@@ -22,6 +22,9 @@
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="求三角形的面积" />
+        <p>
+            <asp:Label ID="Label1" runat="server" Text="三角形的面积"></asp:Label>
+        </p>
     </form>
 </body>
 </html>

@@ -64,9 +64,11 @@ namespace Slnhelloworld
                 p = (a + b + c) / 2;
                 s = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
                 Response.Write(ky + lx + xz + sjx + s);
+                
             }
             else
                 Response.Write(bky);
+                
         }
 
         protected void TextBox1_TextChanged(object sender, EventArgs e)
