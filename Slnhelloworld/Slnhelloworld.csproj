@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Caeser.aspx" />
+    <Content Include="calDay.aspx" />
     <Content Include="calLoan.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomeworkchkEmail.aspx" />
@@ -82,6 +83,13 @@
     </Compile>
     <Compile Include="Caeser.aspx.designer.cs">
       <DependentUpon>Caeser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calDay.aspx.cs">
+      <DependentUpon>calDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calDay.aspx.designer.cs">
+      <DependentUpon>calDay.aspx</DependentUpon>
     </Compile>
     <Compile Include="calLoan.aspx.cs">
       <DependentUpon>calLoan.aspx</DependentUpon>
