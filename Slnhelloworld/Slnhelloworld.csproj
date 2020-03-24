@@ -70,6 +70,7 @@
     <Content Include="Caeser.aspx" />
     <Content Include="calDay.aspx" />
     <Content Include="calLoan.aspx" />
+    <Content Include="getMaxMinAvg.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomeworkchkEmail.aspx" />
     <Content Include="homeworkGetTriangleArea.aspx" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="calLoan.aspx.designer.cs">
       <DependentUpon>calLoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getMaxMinAvg.aspx.cs">
+      <DependentUpon>getMaxMinAvg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getMaxMinAvg.aspx.designer.cs">
+      <DependentUpon>getMaxMinAvg.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
