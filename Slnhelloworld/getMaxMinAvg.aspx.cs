@@ -11,6 +11,12 @@ namespace Slnhelloworld
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
             double[] num = { 15.2, 453, 76, 14, 53, 98, 13 };
             double max = num[0], min = num[0], sum = num[0], avg;
             for (int i = 1; i < num.Length; i++)
@@ -22,7 +28,7 @@ namespace Slnhelloworld
                 sum += num[i];
             }
             avg = sum / num.Length;
-            Response.Write(String.Format("数组中的最大数为{0}，最小数为{1}，平均值为{2}", max, min, avg));
+            Label1.Text=String.Format("数组中的最大数为{0}，最小数为{1}，平均值为{2}", max, min, avg);
         }
     }
 }

@@ -9,8 +9,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        <br />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="点击求解" />
+        <br />
+        <br />
+        <asp:Label ID="Label1" runat="server"></asp:Label>
     </form>
 </body>
 </html>
