@@ -23,7 +23,7 @@ namespace Slnhelloworld
         {
             //先还本金后计利息
             double loan = double.Parse(TextBox1.Text);
-            double rate = 0.04 / 12;
+            double rate = 0.049 / 12;
             int month = 0;
             double pay = 0;
             double leftloan = loan;
@@ -35,7 +35,23 @@ namespace Slnhelloworld
             }
             pay = month * 7500 + leftloan;
             interest = pay - loan;
-            Label1.Text = string.Format("您需要向银行还贷{0}个月，总共还款{1}元，其中除了本金之外，向银行还利息共计{2}元，最后一个月需要还款{3}元。", month + 1, pay, interest, leftloan);
+            Label1.Text = string.Format("先冲本金后还利息计，您需要向银行还贷{0}个月，总共还款{1}元，其中除了本金之外，" +
+                "向银行还利息共计{2}元，最后一个月需要还款{3}元。", month + 1, pay, interest, leftloan);
+           
+            //先计利息后还本金
+            int month1 = 0;
+            double pay1 = 0;
+            double leftloan1 = loan;
+            double interest1 = 0;
+            while (leftloan1 >= 7500)
+            {
+                leftloan1 = leftloan1 * (1 + rate) - 7500;
+                month1 += 1;
+            }
+            pay1 = month1 * 7500 + leftloan1;
+            interest1 = pay1 - loan;
+            Label2.Text = string.Format("先计利息后冲本金计，您需要向银行还贷{0}个月，总共还款{1}元，其中除了本金之外，" +
+                "向银行还利息共计{2}元，最后一个月需要还款{3}元。", month1 + 1, pay1, interest1, leftloan1);
         }
     }
 }

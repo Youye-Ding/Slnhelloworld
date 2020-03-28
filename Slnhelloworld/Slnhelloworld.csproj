@@ -75,6 +75,7 @@
     <Content Include="HomeworkchkEmail.aspx" />
     <Content Include="homeworkGetTriangleArea.aspx" />
     <Content Include="IDcard.aspx" />
+    <Content Include="printGraphical.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="IDcard.aspx.designer.cs">
       <DependentUpon>IDcard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="printGraphical.aspx.cs">
+      <DependentUpon>printGraphical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="printGraphical.aspx.designer.cs">
+      <DependentUpon>printGraphical.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
