@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ExampleMonteCarloPi.aspx" />
     <Content Include="ExampleRandom1.aspx" />
     <Content Include="ExampleRandom2.aspx" />
     <Content Include="ExampleRandom3.aspx" />
@@ -74,6 +75,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExampleMonteCarloPi.aspx.cs">
+      <DependentUpon>ExampleMonteCarloPi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleMonteCarloPi.aspx.designer.cs">
+      <DependentUpon>ExampleMonteCarloPi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleRandom1.aspx.cs">
       <DependentUpon>ExampleRandom1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
