@@ -23,7 +23,7 @@ namespace Slnhelloworld
             {
                 for (int j1 = 0; j1 < 3 - j; j1++)
                 {
-                    Response.Write("&nbsp");
+                    Response.Write("&nbsp;");
                 }
                 for (int j2 = 3 - j; j2 < 4; j2++)
                 {
