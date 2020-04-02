@@ -71,12 +71,14 @@
     <Content Include="calDay.aspx" />
     <Content Include="calLoan.aspx" />
     <Content Include="calLoan2.aspx" />
+    <Content Include="findNum.aspx" />
     <Content Include="getMaxMinAvg.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomeworkchkEmail.aspx" />
     <Content Include="homeworkGetTriangleArea.aspx" />
     <Content Include="IDcard.aspx" />
     <Content Include="printGraphical.aspx" />
+    <Content Include="PrintNumberPyramid.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +109,13 @@
     </Compile>
     <Compile Include="calLoan2.aspx.designer.cs">
       <DependentUpon>calLoan2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="findNum.aspx.cs">
+      <DependentUpon>findNum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="findNum.aspx.designer.cs">
+      <DependentUpon>findNum.aspx</DependentUpon>
     </Compile>
     <Compile Include="getMaxMinAvg.aspx.cs">
       <DependentUpon>getMaxMinAvg.aspx</DependentUpon>
@@ -145,6 +154,13 @@
     </Compile>
     <Compile Include="printGraphical.aspx.designer.cs">
       <DependentUpon>printGraphical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintNumberPyramid.aspx.cs">
+      <DependentUpon>PrintNumberPyramid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintNumberPyramid.aspx.designer.cs">
+      <DependentUpon>PrintNumberPyramid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
