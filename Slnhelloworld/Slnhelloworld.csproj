@@ -71,6 +71,7 @@
     <Content Include="calDay.aspx" />
     <Content Include="calLoan.aspx" />
     <Content Include="calLoan2.aspx" />
+    <Content Include="ExampleDropdownListFromDatatable.aspx" />
     <Content Include="findNum.aspx" />
     <Content Include="getMaxMinAvg.aspx" />
     <Content Include="Global.asax" />
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="calLoan2.aspx.designer.cs">
       <DependentUpon>calLoan2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDropdownListFromDatatable.aspx.cs">
+      <DependentUpon>ExampleDropdownListFromDatatable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleDropdownListFromDatatable.aspx.designer.cs">
+      <DependentUpon>ExampleDropdownListFromDatatable.aspx</DependentUpon>
     </Compile>
     <Compile Include="findNum.aspx.cs">
       <DependentUpon>findNum.aspx</DependentUpon>
