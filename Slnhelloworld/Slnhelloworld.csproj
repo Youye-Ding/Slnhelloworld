@@ -77,6 +77,7 @@
     <Content Include="Global.asax" />
     <Content Include="HomeworkchkEmail.aspx" />
     <Content Include="homeworkGetTriangleArea.aspx" />
+    <Content Include="homeworkTryDate.aspx" />
     <Content Include="IDcard.aspx" />
     <Content Include="printGraphical.aspx" />
     <Content Include="PrintNumberPyramid.aspx" />
@@ -148,6 +149,13 @@
     </Compile>
     <Compile Include="homeworkGetTriangleArea.aspx.designer.cs">
       <DependentUpon>homeworkGetTriangleArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkTryDate.aspx.cs">
+      <DependentUpon>homeworkTryDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkTryDate.aspx.designer.cs">
+      <DependentUpon>homeworkTryDate.aspx</DependentUpon>
     </Compile>
     <Compile Include="IDcard.aspx.cs">
       <DependentUpon>IDcard.aspx</DependentUpon>
