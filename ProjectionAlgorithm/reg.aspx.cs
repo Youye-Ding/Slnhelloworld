@@ -59,7 +59,7 @@ namespace ProjectionAlgorithm
                 DateTime lastLoginTime = DateTime.Now;
                 //判断是否已经注册过
                 bool flag1 = false;
-                string sql = string.Format("select username from tblStudentsForexErcises where username='{0}'", username);
+                string sql = string.Format("select username from tblStudentsForExercise where username='{0}'", username);
                 SQLHelper sh1 = new SQLHelper();
                 SqlDataReader sdr;
                 string result = string.Empty;
@@ -127,13 +127,9 @@ namespace ProjectionAlgorithm
                             insertSql.Append(string.Format("{0},", gender));
                             insertSql.Append(string.Format("'{0}'", lastLoginTime));
                             insertSql.Append(")");
-                            Response.Write(insertSql);
-                            int rows = sh.RunSQL(insertSql.ToString());
-                            if (rows > 0)
-                                msg = string.Format("插入了{0}个同学信息!", rows);
-                            else
-                                msg = "没有插入";
-                            Response.Write("login.aspx");
+
+                            sh.RunSQL(insertSql.ToString ());
+                            Response.Redirect ("login.aspx");
 
                         }
 

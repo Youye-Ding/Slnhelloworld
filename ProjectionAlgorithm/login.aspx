@@ -17,7 +17,7 @@
         </p>
         <asp:Button ID="Reg2" runat="server" OnClick="Reg2_Click" Text="注册" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Log" runat="server" OnClick="Button1_Click" Text="登录" />
+        <asp:Button ID="Log" runat="server" OnClick="Log_Click" Text="登录" />
     </form>
 </body>
 </html>

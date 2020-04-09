@@ -24,8 +24,8 @@ namespace ProjectionAlgorithm
         protected void Log_Click(object sender, EventArgs e)
         {
             string username = TuserName.Text;
-            string pwd = TpassWord.Text;
-            string sql = string.Format("select username,pwd from tblstudents where username='{0}' and pwd='{1}'",username,pwd );
+            string pwd = ClassMd5.Md5Hash32(TpassWord.Text);
+            string sql = string.Format("select username,pwd from tblstudentsforexercise where username='{0}' and pwd='{1}'",username,pwd );
             SQLHelper sh1 = new SQLHelper();
             SqlDataReader sdr ;
             string result=string.Empty;
@@ -34,18 +34,22 @@ namespace ProjectionAlgorithm
                 sh1.RunSQL(sql, out sdr);
                 if (sdr.Read())
                 {
+                    SQLHelper sh = new SQLHelper();
                     try
                     {
-                        StringBuilder updateSql = new StringBuilder("update tblStudentsForExcercise set ");
+                        StringBuilder updateSql = new StringBuilder("update tblStudentsForExercise set ");
                         updateSql.Append("lastLoginTime=getdate(),");
                         updateSql.Append("logintimes=logintimes+1");
                         updateSql.Append(string.Format(" where username='{0}'", username));
-                        Response.Write(updateSql);
-                        
+                        sh.RunSQL(updateSql.ToString());
                     }
                     catch(Exception ex)
                     {
                         Response.Write("更新发生异常，原因：" + ex.Message);
+                    }
+                    finally
+                    {
+                        sh.Close();
                     }
                     result = "登陆成功！";
                 }

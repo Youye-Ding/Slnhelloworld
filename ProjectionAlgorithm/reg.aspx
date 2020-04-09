@@ -21,7 +21,7 @@
             <br />
             出生日期：<asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
             <br />
-            性别：<asp:RadioButton ID="Male" runat="server" Checked="True" OnCheckedChanged="Male_CheckedChanged" Text="男" />
+            性别：<asp:RadioButton ID="Male" runat="server" OnCheckedChanged="Male_CheckedChanged" Text="男" />
             <asp:RadioButton ID="Female" runat="server" OnCheckedChanged="Female_CheckedChanged" Text="女" />
         </div>
         <p>
