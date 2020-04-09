@@ -15,7 +15,9 @@
         <p>
             密码：<asp:TextBox ID="TpassWord" runat="server" OnTextChanged="passWord_TextChanged" TextMode="Password"></asp:TextBox>
         </p>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="登录" />
+        <asp:Button ID="Reg2" runat="server" OnClick="Reg2_Click" Text="注册" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Log" runat="server" OnClick="Button1_Click" Text="登录" />
     </form>
 </body>
 </html>
