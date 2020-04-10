@@ -109,11 +109,11 @@ namespace ProjectionAlgorithm
                         //开始注册
                         if (pwd.Length < 6)
                         {
-                            Response.Write("密码强度不够，不得少于6位！");
+                            msg += "密码强度不够，不得少于6位！";
                         }
                         else if (strengthLevel==0)
                         {
-                            Response.Write("密码必须同时包含字母和数字！");
+                            msg += "密码必须同时包含字母和数字！";
                         }
                         else
                         {
@@ -136,12 +136,12 @@ namespace ProjectionAlgorithm
                     }
                     else
                     {
-                        Response.Write("密码和确认密码不一致！");
+                        msg += "密码和确认密码不一致！";
                     }
                 }
                 else
                 {
-                    Response.Write("该用户名已注册！");
+                    msg += "该用户名已注册！";
                 }
             }
             catch (Exception ex)
