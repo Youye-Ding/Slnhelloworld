@@ -51,7 +51,7 @@ namespace ProjectionAlgorithm
                     {
                         sh.Close();
                     }
-                    result = "登陆成功！";
+                    result = "登录成功！";
                 }
                 else
                 {

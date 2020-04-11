@@ -48,13 +48,9 @@ namespace ProjectionAlgorithm
                 string colList = "birthday,logintimes,username,pwd,gender,lastLoginTime";
                 int logintimes = 0;
                 int gender=0;
-                if (Male.Checked)
+                if (this.Gender .Items[0].Selected ==true)
                 {
                     gender = 1;
-                }
-                if (Female.Checked)
-                {
-                    gender = 0;
                 }
                 DateTime lastLoginTime = DateTime.Now;
                 //判断是否已经注册过
@@ -160,12 +156,9 @@ namespace ProjectionAlgorithm
 
         }
 
-        protected void Male_CheckedChanged(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        protected void Female_CheckedChanged(object sender, EventArgs e)
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

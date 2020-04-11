@@ -58,22 +58,13 @@ namespace ProjectionAlgorithm {
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
         
         /// <summary>
-        /// Male 控件。
+        /// Gender 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Male;
-        
-        /// <summary>
-        /// Female 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Female;
+        protected global::System.Web.UI.WebControls.RadioButtonList Gender;
         
         /// <summary>
         /// Button1 控件。

@@ -21,8 +21,10 @@
             <br />
             出生日期：<asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
             <br />
-            性别：<asp:RadioButton ID="Male" runat="server" OnCheckedChanged="Male_CheckedChanged" Text="男" />
-            <asp:RadioButton ID="Female" runat="server" OnCheckedChanged="Female_CheckedChanged" Text="女" />
+            性别：<asp:RadioButtonList ID="Gender" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
+                <asp:ListItem Value="Male">男</asp:ListItem>
+                <asp:ListItem Value="Female">女</asp:ListItem>
+            </asp:RadioButtonList>
         </div>
         <p>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="注册" />
