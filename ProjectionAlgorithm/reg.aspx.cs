@@ -41,11 +41,12 @@ namespace ProjectionAlgorithm
             string username = userName.Text;
             string pwd = passWord.Text;
             string conpwd = ConpassWord.Text;
+            string truename = Truename.Text;
             DateTime birthday = DateTime.Parse(Calendar1.SelectedDate.ToString("yyyy-MM-dd"));
             SQLHelper sh = new SQLHelper();
             try
             {
-                string colList = "birthday,logintimes,username,pwd,gender,lastLoginTime";
+                string colList = "birthday,logintimes,username,truename,pwd,gender,lastLoginTime";
                 int logintimes = 0;
                 int gender=0;
                 if (this.Gender .Items[0].Selected ==true)
@@ -119,6 +120,7 @@ namespace ProjectionAlgorithm
                             insertSql.Append(string.Format("'{0}',", birthday));
                             insertSql.Append(string.Format("{0},", logintimes));
                             insertSql.Append(string.Format("'{0}',", username));
+                            insertSql.Append(string.Format("'{0}',", truename));
                             insertSql.Append(string.Format("'{0}',", npwd));
                             insertSql.Append(string.Format("{0},", gender));
                             insertSql.Append(string.Format("'{0}'", lastLoginTime));
@@ -159,6 +161,11 @@ namespace ProjectionAlgorithm
         
 
         protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Truename_TextChanged(object sender, EventArgs e)
         {
 
         }

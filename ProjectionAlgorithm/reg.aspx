@@ -19,6 +19,9 @@
             确认密码：<asp:TextBox ID="ConpassWord" runat="server" OnTextChanged="ConpassWord_TextChanged" TextMode="Password"></asp:TextBox>
             <br />
             <br />
+            真实姓名：<asp:TextBox ID="Truename" runat="server" OnTextChanged="Truename_TextChanged"></asp:TextBox>
+            <br />
+            <br />
             出生日期：<asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
             <br />
             性别：<asp:RadioButtonList ID="Gender" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
