@@ -77,6 +77,7 @@
     <Content Include="ExampleRandom2.aspx" />
     <Content Include="ExampleRandom3.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="HomeworkRecursionOctal.aspx" />
     <Content Include="homeworkSongMost.aspx" />
     <Content Include="login.aspx" />
     <Content Include="reg.aspx" />
@@ -127,6 +128,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkRecursionOctal.aspx.cs">
+      <DependentUpon>HomeworkRecursionOctal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkRecursionOctal.aspx.designer.cs">
+      <DependentUpon>HomeworkRecursionOctal.aspx</DependentUpon>
     </Compile>
     <Compile Include="homeworkSongMost.aspx.cs">
       <DependentUpon>homeworkSongMost.aspx</DependentUpon>
