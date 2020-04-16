@@ -70,13 +70,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ddlDynasty.aspx" />
     <Content Include="ExampleDatabase.aspx" />
+    <Content Include="ExampleGradView.aspx" />
     <Content Include="ExampleMonteCarloPi.aspx" />
     <Content Include="ExampleMonteCarloProduct.aspx" />
     <Content Include="ExampleRandom1.aspx" />
     <Content Include="ExampleRandom2.aspx" />
     <Content Include="ExampleRandom3.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="homeworkAltname.aspx" />
     <Content Include="HomeworkRecursionOctal.aspx" />
     <Content Include="homeworkSongMost.aspx" />
     <Content Include="login.aspx" />
@@ -84,12 +87,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ddlDynasty.aspx.cs">
+      <DependentUpon>ddlDynasty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ddlDynasty.aspx.designer.cs">
+      <DependentUpon>ddlDynasty.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleDatabase.aspx.cs">
       <DependentUpon>ExampleDatabase.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExampleDatabase.aspx.designer.cs">
       <DependentUpon>ExampleDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleGradView.aspx.cs">
+      <DependentUpon>ExampleGradView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleGradView.aspx.designer.cs">
+      <DependentUpon>ExampleGradView.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleMonteCarloPi.aspx.cs">
       <DependentUpon>ExampleMonteCarloPi.aspx</DependentUpon>
@@ -128,6 +145,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkAltname.aspx.cs">
+      <DependentUpon>homeworkAltname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkAltname.aspx.designer.cs">
+      <DependentUpon>homeworkAltname.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeworkRecursionOctal.aspx.cs">
       <DependentUpon>HomeworkRecursionOctal.aspx</DependentUpon>
