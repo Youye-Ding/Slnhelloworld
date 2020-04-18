@@ -66,14 +66,14 @@ namespace ProjectionAlgorithm
         {
             string name = TextBox1.Text;
             int dynastyValue = Convert.ToInt32 (DropDownList1.SelectedValue);
-            string sql2 = string.Format("select c_start, c_end from dynasties where c_dy={0}",dynastyValue);
+            string sqlDy = string.Format("select c_start, c_end from dynasties where c_dy={0}",dynastyValue);
             SQLHelper sh = new SQLHelper();
             SqlDataReader sdr;
             int start=0;
             int end=0;
             try
             {
-                sh.RunSQL(sql2, out sdr);
+                sh.RunSQL(sqlDy, out sdr);
                 if (sdr.Read())
                 {
                     start += Convert.ToInt32(sdr[0]);
@@ -88,27 +88,27 @@ namespace ProjectionAlgorithm
             {
                 sh.Close();
             }
-            string sql3 = "select b.c_name_chn as c_name_chn, c.c_addr_id,c.x_coord as x_coord ,c.y_coord as y_coord from biog_addr_data A,biog_main B,ADDR_CODES c";
-            string sql4 = string.Format("select * from biog_main where c_index_year<={0} and c_index_year>={1} and c_name_chn='{2}'",end,start,name);
+            string sqlAddr = "select b.c_name_chn as c_name_chn, c.c_addr_id,c.x_coord as x_coord ,c.y_coord as y_coord from biog_addr_data A,biog_main B,ADDR_CODES c";
+            string sqlExist = string.Format("select * from biog_main where c_index_year<={0} and c_index_year>={1} and c_name_chn='{2}'",end,start,name);
             if (name.Length !=0)
-            { 
-                sql3 += string.Format (" where A.c_personid = B.c_personid AND c.c_addr_id = a.c_addr_id and b.c_name_chn='{0}' and",name);
-                sql3 += string.Format(" (b.c_index_year<={0}and b.c_index_year>={1}) and c.x_coord is not null and c.y_coord is not null",end,start);
+            {
+                sqlAddr += string.Format (" where A.c_personid = B.c_personid AND c.c_addr_id = a.c_addr_id and b.c_name_chn='{0}' and",name);
+                sqlAddr += string.Format(" (b.c_index_year<={0}and b.c_index_year>={1}) and c.x_coord is not null and c.y_coord is not null",end,start);
             }
             else
             {
-                sql3 += " where A.c_personid = B.c_personid AND c.c_addr_id = a.c_addr_id and";
-                sql3 += string.Format(" (b.c_index_year<={0}and b.c_index_year>={1}) and c.x_coord is not null and c.y_coord is not null", end, start);
+                sqlAddr += " where A.c_personid = B.c_personid AND c.c_addr_id = a.c_addr_id and";
+                sqlAddr += string.Format(" (b.c_index_year<={0}and b.c_index_year>={1}) and c.x_coord is not null and c.y_coord is not null", end, start);
             }
             SQLHelper sh1 = new SQLHelper();
             try
             {
-                DataSet ds2 = new DataSet();
-                DataSet ds3 = new DataSet();
-                sh1.RunSQL(sql3, ref ds2);
-                sh1.RunSQL(sql4, ref ds3);
-                DataTable dt2 = ds2.Tables[0];
-                DataTable dt3 = ds3.Tables[0];
+                DataSet dsAddr = new DataSet();
+                DataSet dsExist = new DataSet();
+                sh1.RunSQL(sqlAddr, ref dsAddr);
+                sh1.RunSQL(sqlExist, ref dsExist);
+                DataTable dt2 = dsAddr.Tables[0];
+                DataTable dt3 = dsExist.Tables[0];
                 if (dt3.Rows.Count == 0)
                 {
                     Response.Write("该朝代不存在此人！");
