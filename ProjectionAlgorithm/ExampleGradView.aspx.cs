@@ -89,6 +89,7 @@ namespace ProjectionAlgorithm
                 sh.Close();
             }
             string sql3 = "select b.c_name_chn as c_name_chn, c.c_addr_id,c.x_coord as x_coord ,c.y_coord as y_coord from biog_addr_data A,biog_main B,ADDR_CODES c";
+            string sql4 = string.Format("select * from biog_main where c_index_year<={0} and c_index_year>={1} and c_name_chn='{2}'",end,start,name);
             if (name.Length !=0)
             { 
                 sql3 += string.Format (" where A.c_personid = B.c_personid AND c.c_addr_id = a.c_addr_id and b.c_name_chn='{0}' and",name);
@@ -103,10 +104,24 @@ namespace ProjectionAlgorithm
             try
             {
                 DataSet ds2 = new DataSet();
+                DataSet ds3 = new DataSet();
                 sh1.RunSQL(sql3, ref ds2);
+                sh1.RunSQL(sql4, ref ds3);
                 DataTable dt2 = ds2.Tables[0];
-                GridView1.DataSource = dt2;
-                GridView1.DataBind();
+                DataTable dt3 = ds3.Tables[0];
+                if (dt3.Rows.Count == 0)
+                {
+                    Response.Write("该朝代不存在此人！");
+                }
+                else if (dt2.Rows.Count == 0)
+                {
+                    Response.Write("此人没有足迹！");
+                }
+                else
+                {
+                    GridView1.DataSource = dt2;
+                    GridView1.DataBind();
+                }
             }
             catch(Exception ex)
             {
