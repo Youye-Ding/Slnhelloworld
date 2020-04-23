@@ -18,7 +18,7 @@ namespace ProjectionAlgorithm
             if (!IsPostBack )
             {
                 SQLHelper sh = new SQLHelper();
-                string sql = "select c_dy, c_dynasty_chn from DYNASTIES where (c_start!=0 and c_end!=0) or c_sort=0 order by c_sort";
+                string sql = "select c_dy, c_dynasty_chn from DYNASTIES where c_start!=0 and c_end!=0 order by c_sort";
                 DataTable dt = new DataTable();
                 DataSet ds = new DataSet();
                 try
@@ -109,7 +109,7 @@ namespace ProjectionAlgorithm
                 sh1.RunSQL(sqlExist, ref dsExist);
                 DataTable dt2 = dsAddr.Tables[0];
                 DataTable dt3 = dsExist.Tables[0];
-                if (dt3.Rows.Count == 0)
+                if (dt3.Rows.Count == 0 && dt2.Rows.Count==0)
                 {
                     Response.Write("该朝代不存在此人！");
                 }
