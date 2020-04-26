@@ -70,11 +70,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="barBasic.aspx" />
+    <Content Include="barFromDynamicJson.aspx" />
+    <Content Include="barFromJson.aspx" />
     <Content Include="BasicEcharts.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="barBasic.aspx.cs">
+      <DependentUpon>barBasic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="barBasic.aspx.designer.cs">
+      <DependentUpon>barBasic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="barFromDynamicJson.aspx.cs">
+      <DependentUpon>barFromDynamicJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="barFromDynamicJson.aspx.designer.cs">
+      <DependentUpon>barFromDynamicJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="barFromJson.aspx.cs">
+      <DependentUpon>barFromJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="barFromJson.aspx.designer.cs">
+      <DependentUpon>barFromJson.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BasicEcharts.aspx.cs">
       <DependentUpon>BasicEcharts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
