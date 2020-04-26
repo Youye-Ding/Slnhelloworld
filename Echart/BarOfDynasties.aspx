@@ -12,25 +12,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="main" style="width: 600px;height:400px;"></div>
+    <div id="main" style="width: 1500px;height:400px;"></div>
      <script type="text/javascript">
          // 基于准备好的dom，初始化echarts实例
          var myChart = echarts.init(document.getElementById('main'));
          // 指定图表的配置项和数据
          var option = {
              title: {
-                 text: 'ECharts 入门示例'
+                 text: '朝代人数分布图'
              },
              tooltip: {},
              legend: {
-                 data: ['销量']
+                 data: ['人数']
              },
              xAxis: {
                  data: []
              },
              yAxis: {},
              series: [{
-                 name: '销量',
+                 name: '人数',
                  type: 'bar',
                  data: []
              }]
@@ -42,7 +42,7 @@
          $.ajax({
              type: "GET",
              async: false, //同步执行
-             url: "data/dynamicJson.json",
+             url: "data/BarOfDynasties.json",
              dataType: "json", //返回数据形式为json
              success: function (result) {
                  if (result) {
@@ -51,7 +51,7 @@
                              data: result[0]
                          },
                          series: {
-                             name: '销售',
+                             name: '人数',
                              data: result[1]
                          }
                      });
