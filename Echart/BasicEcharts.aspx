@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BasicEcharts.aspx.cs" Inherits="Echart.BasicEcharts" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BasicEcharts.aspx.cs" Inherits="Echarts.BasicEcharts" %>
 
 <!DOCTYPE html>
 

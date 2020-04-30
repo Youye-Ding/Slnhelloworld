@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="barFromDynamicJson.aspx.cs" Inherits="Echarts.barFromDynamicJson" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BarOfDynasties.aspx.cs" Inherits="Echart.BarOfDynasties" %>
 
 <!DOCTYPE html>
 

@@ -7,7 +7,7 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Echart {
+namespace Echarts {
     
     
     public partial class BasicEcharts {

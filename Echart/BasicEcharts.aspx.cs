@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Echart
+namespace Echarts
 {
     public partial class BasicEcharts : System.Web.UI.Page
     {

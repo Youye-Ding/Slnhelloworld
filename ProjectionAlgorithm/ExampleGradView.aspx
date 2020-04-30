@@ -20,7 +20,7 @@
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="查询人物轨迹" />
         <br />
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" PageSize="20">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" PageSize="20" OnPageIndexChanged="Button1_Click" OnPageIndexChanging="Gridview1_Page">
         </asp:GridView>
     </form>
 </body>

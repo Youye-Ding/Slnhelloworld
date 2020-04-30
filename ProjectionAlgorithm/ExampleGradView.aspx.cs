@@ -137,5 +137,11 @@ namespace ProjectionAlgorithm
         {
 
         }
+
+        protected void Gridview1_Page(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            GridView1.DataBind();
+        }
     }
 }

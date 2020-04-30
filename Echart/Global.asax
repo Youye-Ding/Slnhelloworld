@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Echart.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Echarts.Global" Language="C#" %>
