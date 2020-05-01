@@ -42,7 +42,7 @@
          $.ajax({
              type: "GET",
              async: false, //同步执行
-             url: "data/dynamicJson.json",
+             url: "data/dynamicBarJson.json",
              dataType: "json", //返回数据形式为json
              success: function (result) {
                  if (result) {

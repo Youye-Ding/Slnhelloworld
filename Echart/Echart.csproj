@@ -75,13 +75,31 @@
     <Content Include="barFromJson.aspx" />
     <Content Include="BarOfDynasties.aspx" />
     <Content Include="BasicEcharts.aspx" />
+    <Content Include="cityFromDynamicJson.aspx" />
+    <Content Include="countryClick.aspx" />
+    <Content Include="countryFromDynamicJson.aspx" />
+    <Content Include="countryScatterBasic.aspx" />
+    <Content Include="countryScatterFromDb.aspx" />
+    <Content Include="d3bar\bargraph.html" />
+    <Content Include="d3bar\color_ranges.js" />
+    <Content Include="d3bar\config.js" />
+    <Content Include="d3bar\d3.v5.min.js" />
+    <Content Include="d3bar\d3BarBasic.aspx" />
+    <Content Include="d3bar\d3BarDynamic.aspx" />
+    <Content Include="d3bar\imgs.js" />
+    <Content Include="d3bar\stylesheet.css" />
+    <Content Include="d3bar\visual.js" />
     <Content Include="Global.asax" />
     <Content Include="js\china-contour.js" />
     <Content Include="js\china.js" />
+    <Content Include="js\color_ranges.js" />
+    <Content Include="js\config.js" />
+    <Content Include="js\d3.v5.min.js" />
     <Content Include="js\echarts.js" />
     <Content Include="js\echarts.min.js" />
     <Content Include="js\echarts.simple.js" />
     <Content Include="js\echarts.simple.min.js" />
+    <Content Include="js\imgs.js" />
     <Content Include="js\jquery-3.5.0.min.js" />
     <Content Include="js\province\anhui.js" />
     <Content Include="js\province\aomen.js" />
@@ -117,8 +135,16 @@
     <Content Include="js\province\xizang.js" />
     <Content Include="js\province\yunnan.js" />
     <Content Include="js\province\zhejiang.js" />
+    <Content Include="js\visual.js" />
     <Content Include="js\world.js" />
+    <Content Include="mapdata\china-main-city-map.js" />
+    <Content Include="ncovFromAPI.aspx" />
+    <Content Include="pieFromDynamicJson.aspx" />
+    <Content Include="provinceFromDynamicJson.aspx" />
+    <Content Include="scatterFromDynamicJson.aspx" />
     <Content Include="Test.aspx" />
+    <Content Include="threejs\cube.aspx" />
+    <Content Include="threejs\three.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -157,10 +183,88 @@
     <Compile Include="BasicEcharts.aspx.designer.cs">
       <DependentUpon>BasicEcharts.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cityFromDynamicJson.aspx.cs">
+      <DependentUpon>cityFromDynamicJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cityFromDynamicJson.aspx.designer.cs">
+      <DependentUpon>cityFromDynamicJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classJsonUntity.cs" />
+    <Compile Include="countryClick.aspx.cs">
+      <DependentUpon>countryClick.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="countryClick.aspx.designer.cs">
+      <DependentUpon>countryClick.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="countryFromDynamicJson.aspx.cs">
+      <DependentUpon>countryFromDynamicJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="countryFromDynamicJson.aspx.designer.cs">
+      <DependentUpon>countryFromDynamicJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="countryScatterBasic.aspx.cs">
+      <DependentUpon>countryScatterBasic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="countryScatterBasic.aspx.designer.cs">
+      <DependentUpon>countryScatterBasic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="countryScatterFromDb.aspx.cs">
+      <DependentUpon>countryScatterFromDb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="countryScatterFromDb.aspx.designer.cs">
+      <DependentUpon>countryScatterFromDb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="d3bar\d3BarBasic.aspx.cs">
+      <DependentUpon>d3BarBasic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="d3bar\d3BarBasic.aspx.designer.cs">
+      <DependentUpon>d3BarBasic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="d3bar\d3BarDynamic.aspx.cs">
+      <DependentUpon>d3BarDynamic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="d3bar\d3BarDynamic.aspx.designer.cs">
+      <DependentUpon>d3BarDynamic.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ncovFromAPI.aspx.cs">
+      <DependentUpon>ncovFromAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ncovFromAPI.aspx.designer.cs">
+      <DependentUpon>ncovFromAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pieFromDynamicJson.aspx.cs">
+      <DependentUpon>pieFromDynamicJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pieFromDynamicJson.aspx.designer.cs">
+      <DependentUpon>pieFromDynamicJson.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provinceFromDynamicJson.aspx.cs">
+      <DependentUpon>provinceFromDynamicJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="provinceFromDynamicJson.aspx.designer.cs">
+      <DependentUpon>provinceFromDynamicJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scatterFromDynamicJson.aspx.cs">
+      <DependentUpon>scatterFromDynamicJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scatterFromDynamicJson.aspx.designer.cs">
+      <DependentUpon>scatterFromDynamicJson.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SQLHelper.cs" />
     <Compile Include="Test.aspx.cs">
       <DependentUpon>Test.aspx</DependentUpon>
@@ -169,8 +273,367 @@
     <Compile Include="Test.aspx.designer.cs">
       <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
+    <Compile Include="threejs\cube.aspx.cs">
+      <DependentUpon>cube.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="threejs\cube.aspx.designer.cs">
+      <DependentUpon>cube.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="d3bar\data.csv" />
+    <Content Include="d3bar\example.csv" />
+    <Content Include="d3bar\Worldgdp1997-2012.csv" />
+    <Content Include="d3bar\yiqing.csv" />
+    <Content Include="mapdata\110100.json" />
+    <Content Include="mapdata\120100.json" />
+    <Content Include="mapdata\130100.json" />
+    <Content Include="mapdata\130200.json" />
+    <Content Include="mapdata\130300.json" />
+    <Content Include="mapdata\130400.json" />
+    <Content Include="mapdata\130500.json" />
+    <Content Include="mapdata\130600.json" />
+    <Content Include="mapdata\130700.json" />
+    <Content Include="mapdata\130800.json" />
+    <Content Include="mapdata\130900.json" />
+    <Content Include="mapdata\131000.json" />
+    <Content Include="mapdata\131100.json" />
+    <Content Include="mapdata\140100.json" />
+    <Content Include="mapdata\140200.json" />
+    <Content Include="mapdata\140300.json" />
+    <Content Include="mapdata\140400.json" />
+    <Content Include="mapdata\140500.json" />
+    <Content Include="mapdata\140600.json" />
+    <Content Include="mapdata\140700.json" />
+    <Content Include="mapdata\140800.json" />
+    <Content Include="mapdata\140900.json" />
+    <Content Include="mapdata\141000.json" />
+    <Content Include="mapdata\141100.json" />
+    <Content Include="mapdata\150100.json" />
+    <Content Include="mapdata\150200.json" />
+    <Content Include="mapdata\150300.json" />
+    <Content Include="mapdata\150400.json" />
+    <Content Include="mapdata\150500.json" />
+    <Content Include="mapdata\150600.json" />
+    <Content Include="mapdata\150700.json" />
+    <Content Include="mapdata\150800.json" />
+    <Content Include="mapdata\150900.json" />
+    <Content Include="mapdata\152200.json" />
+    <Content Include="mapdata\152500.json" />
+    <Content Include="mapdata\152900.json" />
+    <Content Include="mapdata\210100.json" />
+    <Content Include="mapdata\210200.json" />
+    <Content Include="mapdata\210300.json" />
+    <Content Include="mapdata\210400.json" />
+    <Content Include="mapdata\210500.json" />
+    <Content Include="mapdata\210600.json" />
+    <Content Include="mapdata\210700.json" />
+    <Content Include="mapdata\210800.json" />
+    <Content Include="mapdata\210900.json" />
+    <Content Include="mapdata\211000.json" />
+    <Content Include="mapdata\211100.json" />
+    <Content Include="mapdata\211200.json" />
+    <Content Include="mapdata\211300.json" />
+    <Content Include="mapdata\211400.json" />
+    <Content Include="mapdata\220100.json" />
+    <Content Include="mapdata\220200.json" />
+    <Content Include="mapdata\220300.json" />
+    <Content Include="mapdata\220400.json" />
+    <Content Include="mapdata\220500.json" />
+    <Content Include="mapdata\220600.json" />
+    <Content Include="mapdata\220700.json" />
+    <Content Include="mapdata\220800.json" />
+    <Content Include="mapdata\222400.json" />
+    <Content Include="mapdata\230100.json" />
+    <Content Include="mapdata\230200.json" />
+    <Content Include="mapdata\230300.json" />
+    <Content Include="mapdata\230400.json" />
+    <Content Include="mapdata\230500.json" />
+    <Content Include="mapdata\230600.json" />
+    <Content Include="mapdata\230700.json" />
+    <Content Include="mapdata\230800.json" />
+    <Content Include="mapdata\230900.json" />
+    <Content Include="mapdata\231000.json" />
+    <Content Include="mapdata\231100.json" />
+    <Content Include="mapdata\231200.json" />
+    <Content Include="mapdata\232700.json" />
+    <Content Include="mapdata\310100.json" />
+    <Content Include="mapdata\310200.json" />
+    <Content Include="mapdata\320100.json" />
+    <Content Include="mapdata\320200.json" />
+    <Content Include="mapdata\320300.json" />
+    <Content Include="mapdata\320400.json" />
+    <Content Include="mapdata\320500.json" />
+    <Content Include="mapdata\320600.json" />
+    <Content Include="mapdata\320700.json" />
+    <Content Include="mapdata\320800.json" />
+    <Content Include="mapdata\320900.json" />
+    <Content Include="mapdata\321000.json" />
+    <Content Include="mapdata\321100.json" />
+    <Content Include="mapdata\321200.json" />
+    <Content Include="mapdata\321300.json" />
+    <Content Include="mapdata\330100.json" />
+    <Content Include="mapdata\330200.json" />
+    <Content Include="mapdata\330300.json" />
+    <Content Include="mapdata\330400.json" />
+    <Content Include="mapdata\330500.json" />
+    <Content Include="mapdata\330600.json" />
+    <Content Include="mapdata\330700.json" />
+    <Content Include="mapdata\330800.json" />
+    <Content Include="mapdata\330900.json" />
+    <Content Include="mapdata\331000.json" />
+    <Content Include="mapdata\331100.json" />
+    <Content Include="mapdata\340100.json" />
+    <Content Include="mapdata\340200.json" />
+    <Content Include="mapdata\340300.json" />
+    <Content Include="mapdata\340400.json" />
+    <Content Include="mapdata\340500.json" />
+    <Content Include="mapdata\340600.json" />
+    <Content Include="mapdata\340700.json" />
+    <Content Include="mapdata\340800.json" />
+    <Content Include="mapdata\341000.json" />
+    <Content Include="mapdata\341100.json" />
+    <Content Include="mapdata\341200.json" />
+    <Content Include="mapdata\341300.json" />
+    <Content Include="mapdata\341500.json" />
+    <Content Include="mapdata\341600.json" />
+    <Content Include="mapdata\341700.json" />
+    <Content Include="mapdata\341800.json" />
+    <Content Include="mapdata\350100.json" />
+    <Content Include="mapdata\350200.json" />
+    <Content Include="mapdata\350300.json" />
+    <Content Include="mapdata\350400.json" />
+    <Content Include="mapdata\350500.json" />
+    <Content Include="mapdata\350600.json" />
+    <Content Include="mapdata\350700.json" />
+    <Content Include="mapdata\350800.json" />
+    <Content Include="mapdata\350900.json" />
+    <Content Include="mapdata\360100.json" />
+    <Content Include="mapdata\360200.json" />
+    <Content Include="mapdata\360300.json" />
+    <Content Include="mapdata\360400.json" />
+    <Content Include="mapdata\360500.json" />
+    <Content Include="mapdata\360600.json" />
+    <Content Include="mapdata\360700.json" />
+    <Content Include="mapdata\360800.json" />
+    <Content Include="mapdata\360900.json" />
+    <Content Include="mapdata\361000.json" />
+    <Content Include="mapdata\361100.json" />
+    <Content Include="mapdata\370100.json" />
+    <Content Include="mapdata\370200.json" />
+    <Content Include="mapdata\370300.json" />
+    <Content Include="mapdata\370400.json" />
+    <Content Include="mapdata\370500.json" />
+    <Content Include="mapdata\370600.json" />
+    <Content Include="mapdata\370700.json" />
+    <Content Include="mapdata\370800.json" />
+    <Content Include="mapdata\370900.json" />
+    <Content Include="mapdata\371000.json" />
+    <Content Include="mapdata\371100.json" />
+    <Content Include="mapdata\371200.json" />
+    <Content Include="mapdata\371300.json" />
+    <Content Include="mapdata\371400.json" />
+    <Content Include="mapdata\371500.json" />
+    <Content Include="mapdata\371600.json" />
+    <Content Include="mapdata\371700.json" />
+    <Content Include="mapdata\410100.json" />
+    <Content Include="mapdata\410200.json" />
+    <Content Include="mapdata\410300.json" />
+    <Content Include="mapdata\410400.json" />
+    <Content Include="mapdata\410500.json" />
+    <Content Include="mapdata\410600.json" />
+    <Content Include="mapdata\410700.json" />
+    <Content Include="mapdata\410800.json" />
+    <Content Include="mapdata\410900.json" />
+    <Content Include="mapdata\411000.json" />
+    <Content Include="mapdata\411100.json" />
+    <Content Include="mapdata\411200.json" />
+    <Content Include="mapdata\411300.json" />
+    <Content Include="mapdata\411400.json" />
+    <Content Include="mapdata\411500.json" />
+    <Content Include="mapdata\411600.json" />
+    <Content Include="mapdata\411700.json" />
+    <Content Include="mapdata\420100.json" />
+    <Content Include="mapdata\420200.json" />
+    <Content Include="mapdata\420300.json" />
+    <Content Include="mapdata\420500.json" />
+    <Content Include="mapdata\420600.json" />
+    <Content Include="mapdata\420700.json" />
+    <Content Include="mapdata\420800.json" />
+    <Content Include="mapdata\420900.json" />
+    <Content Include="mapdata\421000.json" />
+    <Content Include="mapdata\421100.json" />
+    <Content Include="mapdata\421200.json" />
+    <Content Include="mapdata\421300.json" />
+    <Content Include="mapdata\422800.json" />
+    <Content Include="mapdata\429000.json" />
+    <Content Include="mapdata\430100.json" />
+    <Content Include="mapdata\430200.json" />
+    <Content Include="mapdata\430300.json" />
+    <Content Include="mapdata\430400.json" />
+    <Content Include="mapdata\430500.json" />
+    <Content Include="mapdata\430600.json" />
+    <Content Include="mapdata\430700.json" />
+    <Content Include="mapdata\430800.json" />
+    <Content Include="mapdata\430900.json" />
+    <Content Include="mapdata\431000.json" />
+    <Content Include="mapdata\431100.json" />
+    <Content Include="mapdata\431200.json" />
+    <Content Include="mapdata\431300.json" />
+    <Content Include="mapdata\433100.json" />
+    <Content Include="mapdata\440100.json" />
+    <Content Include="mapdata\440200.json" />
+    <Content Include="mapdata\440300.json" />
+    <Content Include="mapdata\440400.json" />
+    <Content Include="mapdata\440500.json" />
+    <Content Include="mapdata\440600.json" />
+    <Content Include="mapdata\440700.json" />
+    <Content Include="mapdata\440800.json" />
+    <Content Include="mapdata\440900.json" />
+    <Content Include="mapdata\441200.json" />
+    <Content Include="mapdata\441300.json" />
+    <Content Include="mapdata\441400.json" />
+    <Content Include="mapdata\441500.json" />
+    <Content Include="mapdata\441600.json" />
+    <Content Include="mapdata\441700.json" />
+    <Content Include="mapdata\441800.json" />
+    <Content Include="mapdata\441900.json" />
+    <Content Include="mapdata\442000.json" />
+    <Content Include="mapdata\445100.json" />
+    <Content Include="mapdata\445200.json" />
+    <Content Include="mapdata\445300.json" />
+    <Content Include="mapdata\450100.json" />
+    <Content Include="mapdata\450200.json" />
+    <Content Include="mapdata\450300.json" />
+    <Content Include="mapdata\450400.json" />
+    <Content Include="mapdata\450500.json" />
+    <Content Include="mapdata\450600.json" />
+    <Content Include="mapdata\450700.json" />
+    <Content Include="mapdata\450800.json" />
+    <Content Include="mapdata\450900.json" />
+    <Content Include="mapdata\451000.json" />
+    <Content Include="mapdata\451100.json" />
+    <Content Include="mapdata\451200.json" />
+    <Content Include="mapdata\451300.json" />
+    <Content Include="mapdata\451400.json" />
+    <Content Include="mapdata\460100.json" />
+    <Content Include="mapdata\460200.json" />
+    <Content Include="mapdata\460300.json" />
+    <Content Include="mapdata\469000.json" />
+    <Content Include="mapdata\500100.json" />
+    <Content Include="mapdata\510100.json" />
+    <Content Include="mapdata\510300.json" />
+    <Content Include="mapdata\510400.json" />
+    <Content Include="mapdata\510500.json" />
+    <Content Include="mapdata\510600.json" />
+    <Content Include="mapdata\510700.json" />
+    <Content Include="mapdata\510800.json" />
+    <Content Include="mapdata\510900.json" />
+    <Content Include="mapdata\511000.json" />
+    <Content Include="mapdata\511100.json" />
+    <Content Include="mapdata\511300.json" />
+    <Content Include="mapdata\511400.json" />
+    <Content Include="mapdata\511500.json" />
+    <Content Include="mapdata\511600.json" />
+    <Content Include="mapdata\511700.json" />
+    <Content Include="mapdata\511800.json" />
+    <Content Include="mapdata\511900.json" />
+    <Content Include="mapdata\512000.json" />
+    <Content Include="mapdata\513200.json" />
+    <Content Include="mapdata\513300.json" />
+    <Content Include="mapdata\513400.json" />
+    <Content Include="mapdata\520100.json" />
+    <Content Include="mapdata\520200.json" />
+    <Content Include="mapdata\520300.json" />
+    <Content Include="mapdata\520400.json" />
+    <Content Include="mapdata\522200.json" />
+    <Content Include="mapdata\522300.json" />
+    <Content Include="mapdata\522400.json" />
+    <Content Include="mapdata\522600.json" />
+    <Content Include="mapdata\522700.json" />
+    <Content Include="mapdata\530100.json" />
+    <Content Include="mapdata\530300.json" />
+    <Content Include="mapdata\530400.json" />
+    <Content Include="mapdata\530500.json" />
+    <Content Include="mapdata\530600.json" />
+    <Content Include="mapdata\530700.json" />
+    <Content Include="mapdata\530800.json" />
+    <Content Include="mapdata\530900.json" />
+    <Content Include="mapdata\532300.json" />
+    <Content Include="mapdata\532500.json" />
+    <Content Include="mapdata\532600.json" />
+    <Content Include="mapdata\532800.json" />
+    <Content Include="mapdata\532900.json" />
+    <Content Include="mapdata\533100.json" />
+    <Content Include="mapdata\533300.json" />
+    <Content Include="mapdata\533400.json" />
+    <Content Include="mapdata\540100.json" />
+    <Content Include="mapdata\542100.json" />
+    <Content Include="mapdata\542200.json" />
+    <Content Include="mapdata\542300.json" />
+    <Content Include="mapdata\542400.json" />
+    <Content Include="mapdata\542500.json" />
+    <Content Include="mapdata\542600.json" />
+    <Content Include="mapdata\610100.json" />
+    <Content Include="mapdata\610200.json" />
+    <Content Include="mapdata\610300.json" />
+    <Content Include="mapdata\610400.json" />
+    <Content Include="mapdata\610500.json" />
+    <Content Include="mapdata\610600.json" />
+    <Content Include="mapdata\610700.json" />
+    <Content Include="mapdata\610800.json" />
+    <Content Include="mapdata\610900.json" />
+    <Content Include="mapdata\611000.json" />
+    <Content Include="mapdata\620100.json" />
+    <Content Include="mapdata\620200.json" />
+    <Content Include="mapdata\620300.json" />
+    <Content Include="mapdata\620400.json" />
+    <Content Include="mapdata\620500.json" />
+    <Content Include="mapdata\620600.json" />
+    <Content Include="mapdata\620700.json" />
+    <Content Include="mapdata\620800.json" />
+    <Content Include="mapdata\620900.json" />
+    <Content Include="mapdata\621000.json" />
+    <Content Include="mapdata\621100.json" />
+    <Content Include="mapdata\621200.json" />
+    <Content Include="mapdata\622900.json" />
+    <Content Include="mapdata\623000.json" />
+    <Content Include="mapdata\630100.json" />
+    <Content Include="mapdata\632100.json" />
+    <Content Include="mapdata\632200.json" />
+    <Content Include="mapdata\632300.json" />
+    <Content Include="mapdata\632500.json" />
+    <Content Include="mapdata\632600.json" />
+    <Content Include="mapdata\632700.json" />
+    <Content Include="mapdata\632800.json" />
+    <Content Include="mapdata\640100.json" />
+    <Content Include="mapdata\640200.json" />
+    <Content Include="mapdata\640300.json" />
+    <Content Include="mapdata\640400.json" />
+    <Content Include="mapdata\640500.json" />
+    <Content Include="mapdata\650100.json" />
+    <Content Include="mapdata\650200.json" />
+    <Content Include="mapdata\652100.json" />
+    <Content Include="mapdata\652200.json" />
+    <Content Include="mapdata\652300.json" />
+    <Content Include="mapdata\652700.json" />
+    <Content Include="mapdata\652800.json" />
+    <Content Include="mapdata\652900.json" />
+    <Content Include="mapdata\653000.json" />
+    <Content Include="mapdata\653100.json" />
+    <Content Include="mapdata\653200.json" />
+    <Content Include="mapdata\654000.json" />
+    <Content Include="mapdata\654200.json" />
+    <Content Include="mapdata\654300.json" />
+    <Content Include="mapdata\659000.json" />
+    <Content Include="mapdata\710000.json" />
+    <Content Include="mapdata\810100.json" />
+    <Content Include="mapdata\820000.json" />
+    <Content Include="mapdata\china-cities.json" />
+    <Content Include="mapdata\china-contour.json" />
+    <Content Include="mapdata\china.json" />
+    <Content Include="mapdata\world.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
