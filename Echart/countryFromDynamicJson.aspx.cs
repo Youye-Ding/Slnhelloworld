@@ -36,6 +36,8 @@ namespace Echarts
             data.Add(new classKSingleValueJson("河北", 15092, "贷款笔数：42412"));
             data.Add(new classKSingleValueJson("河南", 28000, "贷款笔数：52412"));
             data.Add(new classKSingleValueJson("广东", 12000, "贷款笔数：72412"));
+            data.Add(new classKSingleValueJson("江苏", 12200, "贷款笔数：54268"));
+            data.Add(new classKSingleValueJson("海南", 10263, "贷款笔数：81257"));
             string output = JsonConvert.SerializeObject(data);
             File.WriteAllText(@Server.MapPath("~/data/ChineseBank.json"), output);
         }
