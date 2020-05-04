@@ -90,6 +90,9 @@
     <Content Include="d3bar\stylesheet.css" />
     <Content Include="d3bar\visual.js" />
     <Content Include="Global.asax" />
+    <Content Include="HW1-AdmissionByProvince.aspx" />
+    <Content Include="HW2-GDPAndTargetProvince.aspx" />
+    <Content Include="HW3-CareerAndSalary.aspx" />
     <Content Include="js\china-contour.js" />
     <Content Include="js\china.js" />
     <Content Include="js\color_ranges.js" />
@@ -235,6 +238,27 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HW1-AdmissionByProvince.aspx.cs">
+      <DependentUpon>HW1-AdmissionByProvince.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HW1-AdmissionByProvince.aspx.designer.cs">
+      <DependentUpon>HW1-AdmissionByProvince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HW2-GDPAndTargetProvince.aspx.cs">
+      <DependentUpon>HW2-GDPAndTargetProvince.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HW2-GDPAndTargetProvince.aspx.designer.cs">
+      <DependentUpon>HW2-GDPAndTargetProvince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HW3-CareerAndSalary.aspx.cs">
+      <DependentUpon>HW3-CareerAndSalary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HW3-CareerAndSalary.aspx.designer.cs">
+      <DependentUpon>HW3-CareerAndSalary.aspx</DependentUpon>
     </Compile>
     <Compile Include="ncovFromAPI.aspx.cs">
       <DependentUpon>ncovFromAPI.aspx</DependentUpon>

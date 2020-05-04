@@ -15,15 +15,19 @@
 <script type="text/javascript">
     var myChart = echarts.init(document.getElementById('main'));
      var option = {
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#404a59',
         title: {
-            text: '全国地图',
-            subtext: '纯属虚构',
-            x:'center'
+            text: '全国主要城市空气质量',
+            subtext: 'data from PM25.in',
+            left: 'center',
+            textStyle: {
+                color: '#fff'
+            }
         },
         tooltip : {
             trigger: 'item'
-        },
+         },
+
         visualMap: {
             show : false,
             x: 'left',

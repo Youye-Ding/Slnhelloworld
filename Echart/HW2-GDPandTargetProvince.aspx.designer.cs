@@ -7,10 +7,10 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Echarts {
+namespace Echart {
     
     
-    public partial class countryFromDynamicJson {
+    public partial class HW2_GDPandTargetProvince {
         
         /// <summary>
         /// form1 控件。
