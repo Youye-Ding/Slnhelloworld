@@ -78,6 +78,7 @@
     <Content Include="ExampleRandom1.aspx" />
     <Content Include="ExampleRandom2.aspx" />
     <Content Include="ExampleRandom3.aspx" />
+    <Content Include="getDataFromCsv.aspx" />
     <Content Include="Global.asax" />
     <Content Include="homeworkAltname.aspx" />
     <Content Include="HomeworkRecursionOctal.aspx" />
@@ -88,6 +89,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classCSVHelper.cs" />
     <Compile Include="ddlDynasty.aspx.cs">
       <DependentUpon>ddlDynasty.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -143,6 +145,13 @@
     </Compile>
     <Compile Include="ExampleRandom3.aspx.designer.cs">
       <DependentUpon>ExampleRandom3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getDataFromCsv.aspx.cs">
+      <DependentUpon>getDataFromCsv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getDataFromCsv.aspx.designer.cs">
+      <DependentUpon>getDataFromCsv.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
