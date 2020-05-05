@@ -10,7 +10,7 @@
 namespace Echart {
     
     
-    public partial class HW3_CareerAndSalary {
+    public partial class HW2_GDPandTargetProvince {
         
         /// <summary>
         /// form1 控件。

@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-   <div id="main" style="width: 800px;height: 600px"></div>
+   <div id="main" style="width: 100%;height: 1000px"></div>
 <script type="text/javascript">
     var myChart = echarts.init(document.getElementById('main'));
      var option = {

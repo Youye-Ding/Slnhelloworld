@@ -12,7 +12,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="main" style="width: 1200px;height:1000px;"></div>
+    <div id="main" style="width: 100%;height:1000px;"></div>
      <script type="text/javascript">
          // 基于准备好的dom，初始化echarts实例
          var myChart = echarts.init(document.getElementById('main'));
