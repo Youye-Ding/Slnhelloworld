@@ -90,7 +90,8 @@
     <Content Include="d3bar\stylesheet.css" />
     <Content Include="d3bar\visual.js" />
     <Content Include="Global.asax" />
-    <Content Include="HW1-AdmissionByProvince.aspx" />
+    <Content Include="HW1-ArtAdmissionByProvince.aspx" />
+    <Content Include="HW1-SciAdmissionByProvince.aspx" />
     <Content Include="HW2-GDPAndTargetProvince.aspx" />
     <Content Include="HW3-CareerAndSalary.aspx" />
     <Content Include="js\china-contour.js" />
@@ -239,12 +240,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="HW1-AdmissionByProvince.aspx.cs">
-      <DependentUpon>HW1-AdmissionByProvince.aspx</DependentUpon>
+    <Compile Include="HW1-ArtAdmissionByProvince.aspx.cs">
+      <DependentUpon>HW1-ArtAdmissionByProvince.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HW1-AdmissionByProvince.aspx.designer.cs">
-      <DependentUpon>HW1-AdmissionByProvince.aspx</DependentUpon>
+    <Compile Include="HW1-ArtAdmissionByProvince.aspx.designer.cs">
+      <DependentUpon>HW1-ArtAdmissionByProvince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HW1-SciAdmissionByProvince.aspx.cs">
+      <DependentUpon>HW1-SciAdmissionByProvince.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HW1-SciAdmissionByProvince.aspx.designer.cs">
+      <DependentUpon>HW1-SciAdmissionByProvince.aspx</DependentUpon>
     </Compile>
     <Compile Include="HW2-GDPAndTargetProvince.aspx.cs">
       <DependentUpon>HW2-GDPAndTargetProvince.aspx</DependentUpon>
