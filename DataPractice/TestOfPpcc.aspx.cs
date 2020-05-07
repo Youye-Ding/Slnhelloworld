@@ -12,7 +12,7 @@ namespace DataPractice
 {
     public partial class TestOfPpcc : System.Web.UI.Page
     {
-        public double calMean(double[] temp)
+        private double calMean(double[] temp)
         {
             double sum = 0.0;
             double mean = 0.0;
@@ -23,7 +23,7 @@ namespace DataPractice
             mean = sum / temp.Length;
             return mean;
         }
-        public double Caldevar(double[] temp)
+        private double Caldevar(double[] temp)
         {
             double mean = calMean(temp);
             double sum = 0.0;
@@ -34,7 +34,7 @@ namespace DataPractice
             double deVar = Math.Sqrt(sum / temp.Length);
             return deVar;
         }
-        public double calCov(double[] a,double[] b)
+        private double calCov(double[] a,double[] b)
         {
             double cov = 0.0;
             if (a.Length !=b.Length )

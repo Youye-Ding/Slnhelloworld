@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.AITools.Tvbboy">
+      <HintPath>..\dll\Common.AITools.Tvbboy.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -67,13 +70,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\homeworkNormalDistributionForComputerTime.aspx" />
     <Content Include="getDataFromCsv.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Test.aspx" />
     <Content Include="TestOfPpcc.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classCSVHelper.cs" />
+    <Compile Include="data\homeworkNormalDistributionForComputerTime.aspx.cs">
+      <DependentUpon>homeworkNormalDistributionForComputerTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="data\homeworkNormalDistributionForComputerTime.aspx.designer.cs">
+      <DependentUpon>homeworkNormalDistributionForComputerTime.aspx</DependentUpon>
+    </Compile>
     <Compile Include="getDataFromCsv.aspx.cs">
       <DependentUpon>getDataFromCsv.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -86,6 +98,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLHelper.cs" />
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TestOfPpcc.aspx.cs">
       <DependentUpon>TestOfPpcc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,6 +117,7 @@
     <Content Include="data\600519贵州茅台.csv" />
     <Content Include="data\000001.csv" />
     <Content Include="data\600519.csv" />
+    <Content Include="data\某公司统计的开机时间17000条左右.csv" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
