@@ -73,6 +73,7 @@
     <Content Include="data\homeworkNormalDistributionForComputerTime.aspx" />
     <Content Include="getDataFromCsv.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="HomeworkMonteCarloIntegral.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="TestOfPpcc.aspx" />
     <Content Include="Web.config" />
@@ -95,6 +96,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkMonteCarloIntegral.aspx.cs">
+      <DependentUpon>HomeworkMonteCarloIntegral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkMonteCarloIntegral.aspx.designer.cs">
+      <DependentUpon>HomeworkMonteCarloIntegral.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLHelper.cs" />
