@@ -70,7 +70,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="data\homeworkNormalDistributionForComputerTime.aspx" />
+    <Content Include="HomeworkMonteCarloFootball.aspx" />
+    <Content Include="homeworkNormalDistributionForComputerTime.aspx" />
     <Content Include="getDataFromCsv.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomeworkMonteCarloIntegral.aspx" />
@@ -80,11 +81,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classCSVHelper.cs" />
-    <Compile Include="data\homeworkNormalDistributionForComputerTime.aspx.cs">
+    <Compile Include="HomeworkMonteCarloFootball.aspx.cs">
+      <DependentUpon>HomeworkMonteCarloFootball.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkMonteCarloFootball.aspx.designer.cs">
+      <DependentUpon>HomeworkMonteCarloFootball.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkNormalDistributionForComputerTime.aspx.cs">
       <DependentUpon>homeworkNormalDistributionForComputerTime.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="data\homeworkNormalDistributionForComputerTime.aspx.designer.cs">
+    <Compile Include="homeworkNormalDistributionForComputerTime.aspx.designer.cs">
       <DependentUpon>homeworkNormalDistributionForComputerTime.aspx</DependentUpon>
     </Compile>
     <Compile Include="getDataFromCsv.aspx.cs">
@@ -126,6 +134,8 @@
     <Content Include="data\000001.csv" />
     <Content Include="data\600519.csv" />
     <Content Include="data\某公司统计的开机时间17000条左右.csv" />
+    <Content Include="data\Advertising.csv" />
+    <Content Include="data\bostonHourse.csv" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
