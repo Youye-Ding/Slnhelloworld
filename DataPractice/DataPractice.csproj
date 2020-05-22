@@ -47,6 +47,9 @@
       <HintPath>..\dll\Common.AITools.Tvbboy.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -72,6 +75,7 @@
   <ItemGroup>
     <Content Include="ExampleDijkstraCity.aspx" />
     <Content Include="ExampleNaiveBayesSymptom.aspx" />
+    <Content Include="HomeworkDijkstra.aspx" />
     <Content Include="HomeworkMonteCarloFootball.aspx" />
     <Content Include="homeworkNormalDistributionForComputerTime.aspx" />
     <Content Include="getDataFromCsv.aspx" />
@@ -96,6 +100,13 @@
     </Compile>
     <Compile Include="ExampleNaiveBayesSymptom.aspx.designer.cs">
       <DependentUpon>ExampleNaiveBayesSymptom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkDijkstra.aspx.cs">
+      <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkDijkstra.aspx.designer.cs">
+      <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeworkMonteCarloFootball.aspx.cs">
       <DependentUpon>HomeworkMonteCarloFootball.aspx</DependentUpon>

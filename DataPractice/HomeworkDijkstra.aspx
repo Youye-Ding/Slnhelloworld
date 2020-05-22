@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Test.aspx.cs" Inherits="DataPractice.Test" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomeworkDijkstra.aspx.cs" Inherits="DataPractice.HomeworkDijkstra" %>
 
 <!DOCTYPE html>
 
@@ -15,7 +15,9 @@
         </asp:DropDownList>
         <asp:DropDownList ID="ddlPointB" runat="server">
         </asp:DropDownList>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <p>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="单击求算最短距离" />
+        </p>
     </form>
 </body>
 </html>

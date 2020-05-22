@@ -1,24 +1,23 @@
-﻿using Common.AITools.Tvbboy;
-using Newtonsoft.Json;
-using SQL;
+﻿using SQL;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Common.AITools.Tvbboy;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace DataPractice
 {
-    public partial class Test : System.Web.UI.Page
+    public partial class HomeworkDijkstra : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if(!IsPostBack)
             {
                 string sql = "select pointB from tblDistance2020 group by pointB";
                 SQLHelper sh = new SQLHelper();
@@ -27,10 +26,10 @@ namespace DataPractice
                 try
                 {
                     sh.RunSQL(sql, ref ds);
-                    if (ds.Tables[0] != null)
+                    if (ds.Tables[0]!=null)
                     {
                         dt = ds.Tables[0];
-                        if (dt.Rows.Count > 0)
+                        if (dt.Rows.Count>0)
                         {
                             //数据绑定
                             ddlPointA.DataTextField = "PointB";
@@ -39,11 +38,11 @@ namespace DataPractice
                             ddlPointB.DataTextField = "PointB";
                             ddlPointB.DataSource = dt;
                             ddlPointB.DataBind();
-
+                            
                         }
                     }
                 }
-                catch (Exception ex)
+                catch(Exception ex)
                 {
                     Response.Write(ex.Message);
                 }
@@ -66,7 +65,7 @@ namespace DataPractice
         {
             string pointA = ddlPointA.SelectedItem.Text;
             string pointB = ddlPointB.SelectedItem.Text;
-            if (pointA == pointB)
+            if(pointA==pointB)
             {
                 Response.Write("不能起始地为同一处！");
             }
@@ -95,14 +94,14 @@ namespace DataPractice
                                 DataTable dt2 = new DataTable();
                                 DataSet ds2 = new DataSet();
                                 sh2.RunSQL(sql2, ref ds2);
-                                if (ds2.Tables[0] != null)
+                                if (ds2.Tables[0]!=null)
                                 {
                                     dt2 = ds2.Tables[0];
-                                    if (dt2.Rows.Count > 0)
+                                    if (dt2.Rows.Count>0)
                                     {
-                                        foreach (DataRow dr2 in dt2.Rows)
+                                        foreach(DataRow dr2 in dt2.Rows)
                                         {
-                                            node.EdgeList.Add(new Edge(dr2[0].ToString(), dr2[1].ToString(), double.Parse(dr2[2].ToString())));
+                                            node.EdgeList.Add(new Edge(dr2[1].ToString(), dr2[2].ToString(), double.Parse(dr2[3].ToString())));
                                         }
                                     }
                                 }
@@ -121,7 +120,8 @@ namespace DataPractice
                 }
 
                 string output = JsonConvert.SerializeObject(nodeList);
-                File.WriteAllText(@Server.MapPath("~/data/Test.json"), output);
+                File.WriteAllText(@Server.MapPath("~/data/SQL.json"), output);
+
 
                 RoutePlanner planner = new RoutePlanner();
                 RoutePlanResult result = null;
@@ -134,14 +134,16 @@ namespace DataPractice
                     Response.Write("</br>");
                     planner = null;
                 }
-                catch(Exception ex)
+                catch
                 {
-                    Response.Write(ex.Message);
+                    Response.Write("两地不能到达！");
                 }
-
-
-
+                
+               
+                
             }
         }
+            
+       
     }
 }

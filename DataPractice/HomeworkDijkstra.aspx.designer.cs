@@ -10,7 +10,7 @@
 namespace DataPractice {
     
     
-    public partial class Test {
+    public partial class HomeworkDijkstra {
         
         /// <summary>
         /// form1 控件。
