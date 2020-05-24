@@ -75,6 +75,7 @@
   <ItemGroup>
     <Content Include="ExampleDijkstraCity.aspx" />
     <Content Include="ExampleNaiveBayesSymptom.aspx" />
+    <Content Include="HomeworkBayesIris.aspx" />
     <Content Include="HomeworkDijkstra.aspx" />
     <Content Include="HomeworkMonteCarloFootball.aspx" />
     <Content Include="homeworkNormalDistributionForComputerTime.aspx" />
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="ExampleNaiveBayesSymptom.aspx.designer.cs">
       <DependentUpon>ExampleNaiveBayesSymptom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkBayesIris.aspx.cs">
+      <DependentUpon>HomeworkBayesIris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkBayesIris.aspx.designer.cs">
+      <DependentUpon>HomeworkBayesIris.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeworkDijkstra.aspx.cs">
       <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
