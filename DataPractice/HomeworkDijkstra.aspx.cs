@@ -119,10 +119,6 @@ namespace DataPractice
                     sh1.Close();
                 }
 
-                string output = JsonConvert.SerializeObject(nodeList);
-                File.WriteAllText(@Server.MapPath("~/data/SQL.json"), output);
-
-
                 RoutePlanner planner = new RoutePlanner();
                 RoutePlanResult result = null;
                 try
