@@ -74,10 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ExampleDijkstraCity.aspx" />
+    <Content Include="ExampleKmeans.aspx" />
     <Content Include="ExampleNaiveBayesSymptom.aspx" />
     <Content Include="HomeworkBayesGender.aspx" />
     <Content Include="HomeworkBayesIris.aspx" />
     <Content Include="HomeworkDijkstra.aspx" />
+    <Content Include="HomeworkKmeansGeneral.aspx" />
     <Content Include="HomeworkMonteCarloFootball.aspx" />
     <Content Include="homeworkNormalDistributionForComputerTime.aspx" />
     <Content Include="getDataFromCsv.aspx" />
@@ -95,6 +97,13 @@
     </Compile>
     <Compile Include="ExampleDijkstraCity.aspx.designer.cs">
       <DependentUpon>ExampleDijkstraCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleKmeans.aspx.cs">
+      <DependentUpon>ExampleKmeans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleKmeans.aspx.designer.cs">
+      <DependentUpon>ExampleKmeans.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleNaiveBayesSymptom.aspx.cs">
       <DependentUpon>ExampleNaiveBayesSymptom.aspx</DependentUpon>
@@ -123,6 +132,13 @@
     </Compile>
     <Compile Include="HomeworkDijkstra.aspx.designer.cs">
       <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkKmeansGeneral.aspx.cs">
+      <DependentUpon>HomeworkKmeansGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkKmeansGeneral.aspx.designer.cs">
+      <DependentUpon>HomeworkKmeansGeneral.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeworkMonteCarloFootball.aspx.cs">
       <DependentUpon>HomeworkMonteCarloFootball.aspx</DependentUpon>
