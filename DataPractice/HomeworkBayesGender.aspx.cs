@@ -38,6 +38,7 @@ namespace DataPractice
                         ClassNaiveBayes classifier = new ClassNaiveBayes();
                         classifier.TrainClassifier(table);
                         int times = 0;
+                        int people = 1;
                         for (int j = int.Parse(Math.Ceiling(dt.Rows.Count * 0.7).ToString()); j < dt.Rows.Count; j++)
                         {
                             double footsize = double.Parse(dt.Rows[j]["footsize"].ToString());
@@ -45,9 +46,9 @@ namespace DataPractice
                             double weight = double.Parse(dt.Rows[j]["weight"].ToString());
                             string possiblegender = classifier.Classify(new double[] { footsize, height, weight });
                             string realgender = dt.Rows[j]["gender"].ToString();
-                            Response.Write("预测性别为：" + possiblegender + "；");
+                            Response.Write(string.Format("第{0}人脚长{1} cm，身高{2} cm，体重{3} kg，预测性别为：{4}；", people, footsize, height, weight, possiblegender));
                             Response.Write("实际性别为：" + realgender + "。");
-
+                            people++;
                             if (possiblegender == realgender)
                             {
                                 Response.Write("预测成功！" + "</br>");
@@ -58,7 +59,7 @@ namespace DataPractice
                                 Response.Write("预测失败！" + "</br>");
                             }
                         }
-                        Response.Write(string.Format("共预测成功{0}次，成功率为{1}%。", times, 100*times / Math.Ceiling(dt.Rows.Count * 0.3)));
+                        Response.Write(string.Format("共预测成功{0}次，成功率为{1}%。", times, 100 * times / people));
                     }
                 }
             }
