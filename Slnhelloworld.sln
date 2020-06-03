@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echart", "Echart\Echart.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPractice", "DataPractice\DataPractice.csproj", "{ECDE4CEE-7805-471B-9040-E9811B620837}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCrawler", "ProjectCrawler\ProjectCrawler.csproj", "{416C06FF-85FC-44B3-ACD6-512B5D3F6020}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ECDE4CEE-7805-471B-9040-E9811B620837}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECDE4CEE-7805-471B-9040-E9811B620837}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECDE4CEE-7805-471B-9040-E9811B620837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416C06FF-85FC-44B3-ACD6-512B5D3F6020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416C06FF-85FC-44B3-ACD6-512B5D3F6020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416C06FF-85FC-44B3-ACD6-512B5D3F6020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416C06FF-85FC-44B3-ACD6-512B5D3F6020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
