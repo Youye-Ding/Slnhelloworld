@@ -1,8 +1,10 @@
 ﻿using Common.AITools.Tvbboy;
+using Newtonsoft.Json;
 using SQL;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -25,7 +27,7 @@ namespace DataPractice
                         continue;
                     string v = data[i];
                     Response.Write(v);
-                    Response.Write("</br>");
+                    Response.Write("&nbsp;");
                 }
                 Response.Write("===================</br>");
             }
@@ -33,7 +35,7 @@ namespace DataPractice
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string sql = "select name, (case gender when '男' then 1 else 0 end) as gender,military, power, wisdom, charm, life, country from TblGenerals";
+            string sql = "select name, power, wisdom from TblGenerals";
             SQLHelper sh = new SQLHelper();
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
@@ -64,6 +66,8 @@ namespace DataPractice
                         int numClusters = 2;
                         int[] clustering = ClassKmeans.Cluster(rawData, numClusters);
                         ShowClustered(general, clustering, numClusters, 1);
+                        string output = JsonConvert.SerializeObject(rawData);
+                        File.WriteAllText(@Server.MapPath("~/data/generalScatterJson.json"), output);
                     }
                 }
             }
