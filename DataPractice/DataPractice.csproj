@@ -79,6 +79,7 @@
     <Content Include="HomeworkBayesGender.aspx" />
     <Content Include="HomeworkBayesIris.aspx" />
     <Content Include="HomeworkDijkstra.aspx" />
+    <Content Include="HomeworkKmeansBodies.aspx" />
     <Content Include="HomeworkKmeansGeneral.aspx" />
     <Content Include="HomeworkMonteCarloFootball.aspx" />
     <Content Include="homeworkNormalDistributionForComputerTime.aspx" />
@@ -135,6 +136,13 @@
     </Compile>
     <Compile Include="HomeworkDijkstra.aspx.designer.cs">
       <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkKmeansBodies.aspx.cs">
+      <DependentUpon>HomeworkKmeansBodies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkKmeansBodies.aspx.designer.cs">
+      <DependentUpon>HomeworkKmeansBodies.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeworkKmeansGeneral.aspx.cs">
       <DependentUpon>HomeworkKmeansGeneral.aspx</DependentUpon>
