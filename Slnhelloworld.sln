@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPractice", "DataPractic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCrawler", "ProjectCrawler\ProjectCrawler.csproj", "{416C06FF-85FC-44B3-ACD6-512B5D3F6020}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalEssay", "FinalEssay\FinalEssay.csproj", "{179DB756-E990-46D5-928D-1590E147C027}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{416C06FF-85FC-44B3-ACD6-512B5D3F6020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{416C06FF-85FC-44B3-ACD6-512B5D3F6020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{416C06FF-85FC-44B3-ACD6-512B5D3F6020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{179DB756-E990-46D5-928D-1590E147C027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{179DB756-E990-46D5-928D-1590E147C027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{179DB756-E990-46D5-928D-1590E147C027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{179DB756-E990-46D5-928D-1590E147C027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
