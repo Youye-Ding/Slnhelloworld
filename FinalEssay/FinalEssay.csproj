@@ -76,6 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BarScore.aspx" />
     <Content Include="BoxPlot.aspx" />
     <Content Include="Global.asax" />
     <Content Include="js\china-contour.js" />
@@ -94,6 +95,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarScore.aspx.cs">
+      <DependentUpon>BarScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BarScore.aspx.designer.cs">
+      <DependentUpon>BarScore.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BoxPlot.aspx.cs">
       <DependentUpon>BoxPlot.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -7,26 +7,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>ECharts</title>
-		<!-- 引入 echarts.js -->
 		<script src="js/echarts.min.js"></script>
         <script src="js/jquery-3.5.0.min.js"></script>
-		<script src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+		<script src="js/dataTool.min.js"></script>
 	</head>
 
 	<body>
-		<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
 		<div id="main" style="width: 1000px;height:800px;"></div>
 		<script type="text/javascript">
-			// 基于准备好的dom，初始化echarts实例
 			var myChart = echarts.init(document.getElementById('main'));
 			var option;
             var Data = [];
-			// Generate data.
             $.ajax({
                 type: "GET",
-                async: false, //同步执行
+                async: false, 
                 url: "data/BoxPlot.json",
-                dataType: "json", //返回数据形式为json
+                dataType: "json", 
                 success: function (result) {
                     Data = result; 
                 },
@@ -41,16 +37,6 @@
                     {
                         text: '期末考试成绩分布盒须图',
                         left: 'center',
-                    },
-                    {
-                        text: 'upper: Q3 + 1.5 * IQR \nlower: Q1 - 1.5 * IQR',
-                        borderColor: '#999',
-                        borderWidth: 1,
-                        textStyle: {
-                            fontSize: 14
-                        },
-                        left: '10%',
-                        top: '90%'
                     }
                 ],
                 tooltip: {
@@ -72,9 +58,7 @@
                     splitArea: {
                         show: false
                     },
-                    axisLabel: {
-                        formatter: 'expr {value}'
-                    },
+                    data: ['江苏省通州高级中学','江苏省西亭中学','平潮中学','金沙中学','三余中学'],
                     splitLine: {
                         show: false
                     }
