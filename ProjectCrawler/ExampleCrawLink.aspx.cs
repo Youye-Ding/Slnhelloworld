@@ -20,7 +20,7 @@ namespace ProjectCrawler
         public void HrefCrawler()
         {
             var hrefList = new List<examplemyhref>();
-            for (int page = 0; page < 10; page++)
+            for (int page = 0; page < 100; page++)
             {
                 string initurl = string.Format("https://tieba.baidu.com/f?kw=%E5%8D%8E%E4%B8%9C%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&ie=utf-8&&pn={0}", page*50);
                 string result = string.Empty;
@@ -33,6 +33,7 @@ namespace ProjectCrawler
                 hrefCrawler.OnCompleted += (s, e) =>
                   {
                       var links = Regex.Matches(e.PageSource, @"<a[^>]+href=""*(?<href>[^>\s]+)""\s*[^>]*>(?<text>(?!.*img).*?)</a>", RegexOptions.IgnoreCase);
+                      Response.Write("华东师范大学吧");
                       foreach (Match match in links)
                       {
                           var h = new examplemyhref
