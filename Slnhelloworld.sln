@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCrawler", "ProjectCr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalEssay", "FinalEssay\FinalEssay.csproj", "{179DB756-E990-46D5-928D-1590E147C027}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectWordSegmenter", "ProjectWordSegmenter\ProjectWordSegmenter.csproj", "{1EDFC353-081E-4798-8903-41A958DAA41F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{179DB756-E990-46D5-928D-1590E147C027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{179DB756-E990-46D5-928D-1590E147C027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{179DB756-E990-46D5-928D-1590E147C027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EDFC353-081E-4798-8903-41A958DAA41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDFC353-081E-4798-8903-41A958DAA41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDFC353-081E-4798-8903-41A958DAA41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDFC353-081E-4798-8903-41A958DAA41F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
